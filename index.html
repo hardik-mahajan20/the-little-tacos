@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
     <head>
-
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description"
@@ -10,13 +8,11 @@
         <title>The Little Taco Shop</title>
         <link rel="icon" type="image/x-icon" href="images/favicon.ico">
         <link rel="stylesheet" href="css/style.css">
-
     </head>
 
     <body>
-
-        <!-- Header Section -->
-        <header>
+        <!-- Header Part -->
+        <header id="top">
             <h1>Welcome to The Little Taco Shop</h1>
             <nav>
                 <ul>
@@ -29,23 +25,21 @@
             </nav>
             <figure>
                 <img src="images/tacos_and_drink_400x267.png"
-                    alt="This is Tacos and Drink"
-                    width="400px" height="267px" title="We Love Tacos">
+                    alt="Plate of tacos with a drink"
+                    width="400" height="267" title="We Love Tacos">
                 <figcaption>
                     Tacos and a Drink
                 </figcaption>
             </figure>
         </header>
-
         <hr>
-
         <main>
 
             <!-- About Section -->
             <article>
                 <section id="about">
                     <h2>About <abbr title="Little Taco Shop">LTS</abbr></h2>
-                    <p><abbr title="Little Taco Shop">LST </abbr>was founded in
+                    <p><abbr title="Little Taco Shop">LST</abbr> was founded in
                         2022. Our shop was built from a <strong>love of
                             tacos</strong>🌮🌮🌮. We hope our shop adds a unique
                         and interesting place to our little town.</p>
@@ -67,23 +61,24 @@
                     </aside>
                 </section>
             </article>
-
             <hr>
-
+            <!-- Menu Section -->
             <article>
                 <section id="menu">
                     <h2>Our Menu</h2>
                     <table>
+                        <caption>Our Tacos</caption>
                         <thead>
-                            <caption>Our Tacos</caption>
+                            <tr>
+                                <th scope="col">Tacos</th>
+                                <th scope="col"><abbr
+                                        title="Quantity">Qty</abbr></th>
+                                <th scope="col">Price</th>
+                            </tr>
                         </thead>
                         <tbody>
-                            <th scope="col">Tacos</th>
-                            <th scope="col"><abbr
-                                    title="Quantity">Qty</abbr></th>
-                            <th scope="col">Price</th>
                             <tr>
-                                <th scope="row" rowspan="3">Cruncy</th>
+                                <th scope="row" rowspan="3">Crunchy</th>
                                 <td>1</td>
                                 <td>$1.50</td>
                             </tr>
@@ -118,16 +113,17 @@
                         </tfoot>
                     </table>
                 </section>
-
                 <br>
-
                 <section>
-                    <a href="#">Back to Top</a>
+                    <a href="#top">Back to Top</a>
                 </section>
-
             </article>
-
         </main>
+        <hr>
+        <hr>
+        <!-- Footer Part -->
+        <footer>
+            <p>Copyright &copy;The Little Taco Shop</p>
+        </footer>
     </body>
-
 </html>
